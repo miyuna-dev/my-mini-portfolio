@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!--=========== FAVICON LOGO ===========-->
+    <link rel="shorcut icon" href="assets/img/miyu-sakura.png" type="image/x-icon">
+
+    <!--=========== REMIXICONS ===========-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=========== CSS ===========-->
+    <link rel="stylesheet" href="assets/scss/styles.css">
+
+</head>
+<body>
+    <!--=========== HEADER PROFILE ===========-->
+    <header class="profile container">
+        <!-- Theme Button -->
+        <i class="ri-moon-clear-line change-theme" id="theme-btn"></i>
+        <i class="ri-bear-smile-line color-theme" id="color-theme"></i>
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__profil">
+                        <img src="assets/img/jennifer-kadri.jpg" alt="">
+                        <!-- <img src="assets/img/miyu-sakura.png" alt=""> -->
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Jennifer Kadri</h2>
+                <h3 class="profile__profession">Web Developer</h3>
+
+                <ul class="profile__social">
+                    <a href="https://api.whatsapp.com/send?phone=33761058086&text=Contactez-moi pour plus d'informations" target="_blank"  class="profile__social-link">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jennifer-kadri/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://www.github.com/jennifer-kadri?tab=repositories" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">7</h3>
+                    <p class="profile__info-description">
+                        Months of <br> work</p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+20</h3>
+                    <p class="profile__info-description">
+                        Completed <br> projects</p>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+                <a download="" href="assets/resume/CV_Jennifer_KADRI.pdf" class="button">
+                    Download CV <i class="ri-download-2-line"></i> 
+                </a>
+
+                <!-- <div class="profile__buttons-small">
+                    <a href="https://api.whatsapp.com/send?phone=33761058086&text=Hello, more information!" target="_blank" class="social-btn button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/jennifer-kadri/" target="_blank" class="social-btn button button__small button__gray">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <!--=========== MAIN ===========-->
+    <main class="main">
+        <section class="filters container">
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Projects
+                </button>
+
+                <button class="filters__button" data-target="#skills">
+                    Skills
+                </button> 
+            </ul>
+            <div class="filters__sections">
+                <!--=========== PROJECTS ===========-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="assets/img/projects/dating.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div class="projects__open" onClick="window.open('newurl.html', 'mywindow')">
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Dating Site</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/projects/social-media.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal"> 
+                            <div class="projects__open" onClick="window.open('newurl.html', 'mywindow')">
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Social Media Site</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/projects/chatting.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div class="projects__open" onClick="window.open('newurl.html', 'mywindow')">
+                                <span class="projects__subtitle">Design</span>
+                                <h3 class="projects__title">Mobile Chat Site</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/projects/freelance.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div class="projects__open" onClick="window.open('newurl.html', 'mywindow')">
+                                <span class="projects__subtitle">Design</span>
+                                <h3 class="projects__title">UI/UX Site</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--=========== SKILLS ===========-->
+                <div class="skills__content grid" data-content id="skills">
+                    <!-------- FRONTEND -------->
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Frontend
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------- BACKEND -------->
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Backend
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Laravel</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Symfony</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--=========== THEME CUSTOMIZATION ===========-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size and color</p>
+
+           <!-------- FONT SIZES -------->
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+           <!-------- PRIMARY COLORS -------->
+           <div class="color">
+               <h4>Color</h4>
+               <div class="choose-color">
+                   <span class="color-1 active"></span>
+                   <span class="color-2"></span>
+                   <span class="color-3"></span>
+                   <span class="color-4"></span>
+                   <span class="color-5"></span>
+               </div>
+           </div>
+
+           <!-------- BACKGOUND COLORS -------->
+        </div>
+    </div>
+
+    <!--=========== FOOTER ===========-->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169;Miyuna. All rights reserved
+        </span>
+    </footer>
+
+    <!--=========== COLOR THEME JS ===========-->
+    <script src="assets/js/darkTheme.js"></script>
+    <script src="assets/js/customTheme.js"></script>
+
+    <!--=========== SCROLL REVEAL ===========-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=========== MAIN JAVASCRIPT ===========-->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
